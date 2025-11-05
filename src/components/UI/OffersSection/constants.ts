@@ -1,6 +1,6 @@
 import webdevelopment from '../../../../public/images/webdevelopment.jpg';
-import creative from '../../../../public/images/creative.jpg';
-import seo from '../../../../public/images/seo.jpg';
+import creative from '../../../../public/images/Creative.jpg';
+import seo from '../../../../public/images/SEO.jpg';
 import ai from '../../../../public/images/ai.jpg';
 // For desktop
 export const desktopHeaderPhrases = [

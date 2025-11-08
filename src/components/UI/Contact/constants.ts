@@ -21,7 +21,7 @@ export const mobileParagraphPhrase = [
 export const contactInfo = [
   {
     title: 'Email Us',
-    value: 'info@thedocklar.com',
+    value: 'info@theBOAT.com',
     description: 'Send us an email anytime',
   },
   {

@@ -26,6 +26,7 @@ const MaskText = ({ phrases, tag }: { phrases: string[]; tag: string }) => {
                 initial="initial"
                 animate={isInView ? 'open' : ''}
                 custom={index}
+                data-color={phrase === 'SAIL' ? 'red' : undefined}
               >
                 {phrase}
               </motion.h1>

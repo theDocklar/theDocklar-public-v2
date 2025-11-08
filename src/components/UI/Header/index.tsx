@@ -8,7 +8,7 @@ import {
   Nav,
   CallToActions,
 } from './styles';
-import docklar_logo from '../../../../public/docklarlogo.png';
+import docklar_logo from '../../../../public/theboat.png';
 import AnimatedLink from '@/components/Common/AnimatedLink';
 import { links } from './constants';
 import CTAButton from '@/components/Common/CTAButton';

@@ -3,17 +3,17 @@ import ic_identification from '../../../../public/svgs/ic_identification.svg';
 import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHeaderPhrase = ["Introducing theDocklar's Complete", 'Digital Solutions'];
+export const desktopHeaderPhrase = ["Introducing theBOAT's Complete", 'Digital Solutions'];
 export const desktopParagraphPhrase = [
-  " Discover theDocklar's comprehensive approach – our all-in-one digital services. Elevate your business",
+  " Discover theBOAT's comprehensive approach – our all-in-one digital services. Elevate your business",
   'with cutting-edge web development, SEO, marketing, and branding',
   'solutions.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing theDocklar's", 'Complete Digital Solutions'];
+export const mobileHeaderPhrase = ["Introducing theBOAT's", 'Complete Digital Solutions'];
 export const mobileParagraphPhrase = [
-  " Discover theDocklar's comprehensive approach – our all-in-one digital services.",
+  " Discover theBOAT's comprehensive approach – our all-in-one digital services.",
   ' Elevate your business with cutting-edge web development,',
   'SEO, marketing, and branding',
   'solutions.',

@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
-import docklar_logo from '../../../../public/docklarlogo.png';
+import docklar_logo from '../../../../public/theboat.png';
 
 const linksArr = [
   {
@@ -63,7 +63,7 @@ const Footer = () => {
           <FooterBottom>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              theDocklar by theBOAT ceylon pvt LTD.
+              theBOAT by theBOAT ceylon pvt LTD.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

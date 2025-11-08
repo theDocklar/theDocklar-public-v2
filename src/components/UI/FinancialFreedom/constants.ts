@@ -10,10 +10,8 @@ export const desktopParagraphPhrase = [
   "That's why we offer you the comprehensive solutions you deserve.",
 ];
 export const desktopBriefNotePhrase = [
-  '"Came for a website,',
-  'stayed for the strategy,',
-  'left with a full',
-  'digital transformation."',
+  '"Came for a website, stayed for the strategy, left with a full digital transformation.',
+ 
 ];
 
 // For mobile
@@ -25,13 +23,7 @@ export const mobileParagraphPhrase = [
 ];
 
 export const mobileBriefNotePhrase = [
-  'Modern',
-  ' websites,',
-  'SEO',
-  ' optimization,',
-  'and expert',
-  'guidance, all',
-  'in one place.',
+  '"Came for a website, stayed for the strategy, left with a full digital transform.',
 ];
 
 export const edges = [

@@ -28,7 +28,7 @@ export const Header = styled.header`
   align-items: center;
   gap: 1.5rem;
   max-width: 56rem;
-  margin: 0 auto 7.75rem;
+  margin: 4rem auto 7.75rem;
   text-align: center;
 
   h1 {
@@ -145,9 +145,9 @@ export const BriefNote = styled.div`
 
   p {
     color: var(--Background, #070606);
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 400;
-    max-width: 1440px;
+  
   }
 
   @media (max-width: 768px) {

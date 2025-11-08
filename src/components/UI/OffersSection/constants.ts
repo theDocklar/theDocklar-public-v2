@@ -5,16 +5,16 @@ import ai from '../../../../public/images/ai.jpg';
 // For desktop
 export const desktopHeaderPhrases = [
   'Elevate Your Digital',
-  'Presence with theDocklar',
+  'Presence with theBOAT',
 ];
 export const desktopParagraphPhrase = [
-  'theDocklar offers comprehensive web development solutions. From SEO to branding,',
+  'theBOAT offers comprehensive web development solutions. From SEO to branding,',
   "we've got you covered. Transform your business today.",
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'theDocklar offers comprehensive web development solutions. From',
+  'theBOAT offers comprehensive web development solutions. From',
   "SEO to branding, we've got you covered.",
   'Transform your business today.',
 ];

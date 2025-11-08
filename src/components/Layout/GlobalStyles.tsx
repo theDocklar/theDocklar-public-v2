@@ -23,7 +23,9 @@ export const GlobalStyles = styled.createGlobalStyle`
   body {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 1.2;
     background-color: var(--Background);
     color: var(--white);  
     scroll-snap-type: y mandatory;

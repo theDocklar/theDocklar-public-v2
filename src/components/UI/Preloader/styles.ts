@@ -35,11 +35,14 @@ export const Inner = styled.div`
     overflow: hidden;
     display: flex;
     align-items: center;
-    gap: 0.1em;
+    gap: 0.05em;
 
     div {
-      font-weight: 600;
-      font-size: 20em;
+      font-family: var(--font-leaguespartan), 'League Spartan', sans-serif;
+      font-weight: 300;
+      font-size: 15em;
+      letter-spacing: -0.02em;
+      line-height: 0.9;
     }
   }
 
@@ -51,12 +54,16 @@ export const Inner = styled.div`
       height: 100%;
     }
 
-    div {
-      gap: 0.05rem;
       div {
-        font-size: 5rem;
+        gap: 0.05rem;
+        div {
+          font-family: var(--font-leaguespartan), 'League Spartan', sans-serif;
+          font-weight: 600;
+          font-size: 4rem;
+          letter-spacing: -0.02rem;
+          line-height: 0.9;
+        }
       }
-    }
   }
 `;
 

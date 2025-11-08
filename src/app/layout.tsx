@@ -1,16 +1,31 @@
 import Layout from '@/components/Layout';
 import './globals.css';
 import type { Metadata } from 'next';
-import { League_Spartan } from 'next/font/google';
+import { Poppins, Anton, League_Spartan } from 'next/font/google';
 
-const leagueSpartan = League_Spartan({
-  weight: ['300', '400', '500', '600', '700'],
+const poppins = Poppins({
+  weight: ['200'],
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-poppins',
+});
+
+const anton = Anton({
+  weight: ['400'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-anton',
+});
+
+const leaguespartan = League_Spartan({
+  weight: ['600'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-leaguespartan',
 });
 
 export const metadata: Metadata = {
-  title: 'theDocklar',
+  title: 'theBOAT',
   description: 'Complete web development solutions with SEO, marketing, branding, and creative services',
   icons: {
     icon: '/docklarlogo.png',
@@ -25,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={leagueSpartan.className}>
+    <html lang="en" className={`${poppins.variable} ${anton.variable} ${leaguespartan.variable}`}>
+      <body className={poppins.className}>
         <Layout>{children}</Layout>
       </body>
     </html>

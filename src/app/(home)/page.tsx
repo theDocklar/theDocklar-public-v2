@@ -14,9 +14,10 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <FinancilaFreedom />
       {/* <Featured /> */}
       <OffersSection />
-      <FinancilaFreedom />
+ 
       <Portfolio />
       {/* <IntroSection /> */}
       {/* <JoinSection /> */}

@@ -19,17 +19,17 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'What services does theDocklar offer?',
+    question: 'What services does theBOAT offer?',
     answer:
-      'theDocklar provides comprehensive web development solutions including custom websites, SEO marketing, branding & design, and digital marketing services all in one package.',
+      'theBOAT provides comprehensive web development solutions including custom websites, SEO marketing, branding & design, and digital marketing services all in one package.',
   },
   {
-    question: 'How does theDocklar ensure quality in web development?',
+    question: 'How does theBOAT ensure quality in web development?',
     answer:
       'We use modern technologies, follow best practices, conduct thorough testing, and provide ongoing support to ensure your website performs optimally and meets your business goals.',
   },
   {
-    question: 'What makes theDocklar different from other web agencies?',
+    question: 'What makes theBOAT different from other web agencies?',
     answer:
       'We offer a complete all-in-one solution combining web development, SEO, marketing, branding, and creative services, eliminating the need to work with multiple agencies.',
   },

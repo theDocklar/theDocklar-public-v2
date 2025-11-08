@@ -45,15 +45,23 @@ export const HeroTextContainer = styled.div`
   padding-bottom: 2rem;
 
   h1 {
-    font-size: 6rem;
+    font-family: var(--font-anton), 'Anton', sans-serif;
+    font-size: 10rem;
     font-weight: 400;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    line-height: 0.9;
+    
+    &[data-color="red"] {
+      color: #ff5757;
+    }
   }
 
   p {
     max-width: 64rem;
     color: #bdbdbd;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 200;
     margin: 0 auto;
   }
 
@@ -61,13 +69,22 @@ export const HeroTextContainer = styled.div`
     gap: 1rem;
     padding-bottom: 1.5rem;
     h1 {
-      font-size: 2.5rem;
+      font-family: var(--font-anton), 'Anton', sans-serif;
+      font-size: 5rem;
       font-weight: 400;
+      letter-spacing: 0rem;
+      text-transform: uppercase;
+      line-height: 0.9;
+      
+      &[data-color="red"] {
+        color: #ff5757;
+      }
     }
 
     p {
       font-size: 1rem;
       line-height: 1.5rem;
+      font-weight: 200;
     }
   }
 `;

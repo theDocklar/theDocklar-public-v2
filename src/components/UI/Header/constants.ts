@@ -30,7 +30,7 @@ export const links = [
     linkTo: 'Portfolio',
   },
   {
-    url: '#contact',
-    linkTo: 'Contact',
+    url: '/products',
+    linkTo: 'Products',
   },
 ];

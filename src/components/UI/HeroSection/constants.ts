@@ -1,15 +1,13 @@
 // For desktop
-export const phrases = ['All in one Engine for your Business', 'Digital Growth'];
+export const phrases = ['IDEAS DESERVE TO', 'SAIL'];
 export const paragraphPhrases = [
-  "Experience comprehensive web solutions with theDocklar — an all‑in‑one engine",
-  'to design, build and grow your business online with confidence.',
+  "We craft meaningful digital and brand experiences that help businesses navigate growth with clarity and impact.",
 ];
 
 // For mobile
-export const mobilePhrases = ['All in one Engine for your Business', 'Digital Growth'];
+export const mobilePhrases = ['IDEAS DESERVE TO', 'SAIL'];
 export const mobileParagraphPhrases = [
-  'All‑in‑one engine to design, build and grow',
-  'your business online with confidence.',
+'We craft meaningful digital and brand experiences that help businesses navigate growth with clarity and impact.',
 ];
 
 export const techStack: string[] = [

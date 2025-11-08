@@ -11,6 +11,8 @@ import {
   paragraphPhrases,
   phrases,
 } from './constants';
+import { ParallaxImages } from '../Featured/styles';
+import ParallaxText from '@/components/Common/ParallaxImages';
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -18,8 +20,8 @@ const HeroSection = () => {
     <Wrapper>
       <Inner>
         <Pill>
-          <span>Introducing theBOAT solutions</span>
-          <Image src={ic_chevron_right} alt="chevron-right" />
+          <span>Introducing theBOAT Solutions Studio</span>
+          {/* <Image src={ic_chevron_right} alt="chevron-right" /> */}
         </Pill>
         <HeroTextContainer>
           {isMobile ? (
@@ -40,6 +42,15 @@ const HeroSection = () => {
             <Image key={name} src={`/images/${name}.png`} alt={`${name} logo`} width={120} height={28} />
           ))}
         </LogosPane>
+        {/* <h2>Featured and Seen in</h2>
+        <ParallaxImages>
+          <ParallaxText baseVelocity={-4}>
+            <Image src="/images/companies.png" alt="companies" width={100} height={64} />
+          </ParallaxText>
+        </ParallaxImages> */}
+      </Inner>
+      <Inner>
+        
       </Inner>
     </Wrapper>
   );

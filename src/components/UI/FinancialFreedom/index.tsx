@@ -26,6 +26,7 @@ import {
   mobileHeaderPhrase,
   mobileParagraphPhrase,
 } from './constants';
+import { LogosPane } from '../HeroSection/styles';
 
 const FinancialFreedom = () => {
   const isMobile = useIsMobile();
@@ -73,6 +74,11 @@ const FinancialFreedom = () => {
             )}
           </Div>
         </BannerCtn>
+        {/* <LogosPane>
+          {['React', 'Next.js', 'Wordpress', 'Flutter','shopify', 'figma'].map((name) => (
+            <Image key={name} src={`/images/${name}.png`} alt={`${name} logo`} width={120} height={28} />
+          ))}
+        </LogosPane> */}
         <Edges>
           {edges.map((edge, i) => (
             <Edge key={i}>

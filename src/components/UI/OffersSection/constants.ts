@@ -2,13 +2,14 @@ import webdevelopment from '../../../../public/images/webdevelopment.jpg';
 import creative from '../../../../public/images/Creative.jpg';
 import seo from '../../../../public/images/SEO.jpg';
 import ai from '../../../../public/images/ai.jpg';
+import shopify from '../../../../public/images/shopifyimg2.png';
 // For desktop
 export const desktopHeaderPhrases = [
   'Elevate Your Digital',
   'Presence with theBOAT',
 ];
 export const desktopParagraphPhrase = [
-  'theBOAT offers comprehensive web development solutions. From SEO to branding,',
+  'theBOAT offers comprehensive digital solutions. From creative direction for your business for digital presence, to full automations and AI powered solutions,',
   "we've got you covered. Transform your business today.",
 ];
 
@@ -43,5 +44,11 @@ export const offers = [
     title: 'AI Solutions',
     details:
       'Reach your target audience effectively with our integrated digital marketing campaigns across all platforms.',
+  },
+  {
+    illustration: shopify,
+    title: 'Shopify Stores',
+    details:
+      'Create a beautiful and functional online store with Shopify, or a landing page to showcase your products or services.',
   },
 ];

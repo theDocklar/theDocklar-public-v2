@@ -59,5 +59,21 @@ export const projects: Project[] = [
     category: 'Agency Website',
     image: '/images/portfolio4.png',
     link: 'https://visionhaven.co'
+  },
+  {
+    id: 5,
+    title: 'Teragon Solutions',
+    description: 'Quantity Survey agency website that allows users to showcase their work and drive conversions.',
+    category: 'Agency Website',
+    image: '/images/teragon.png',
+    link: 'https://teragonsolutions.com'
+  },
+  {
+    id: 6,
+    title: 'Growth Lab',
+    description: 'Quantity Survey agency website that allows users to showcase their work and drive conversions.',
+    category: 'Personal Portfolio',
+    image: '/images/growthlab.png',
+    link: 'https://growthlab.lk'
   }
 ];

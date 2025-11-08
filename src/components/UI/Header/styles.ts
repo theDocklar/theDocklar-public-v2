@@ -19,6 +19,11 @@ export const Inner = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -33,28 +38,33 @@ export const LogoContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    justify-content: space-between;
-    width: 100%;
-    grid-column: 1 / -1;
+    justify-content: flex-start;
+    width: auto;
   }
 `;
 
 export const BurgerMenu = styled.div`
   display: none;
   position: relative;
+  z-index: 100;
 
   @media (max-width: 768px) {
     display: block;
     padding: 0.5rem;
+    cursor: pointer;
 
     div {
       position: absolute;
-      background: var(--emerald);
-      width: '250px';
-      height: '300px';
-      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      width: 250px;
+      height: 300px;
+      border-radius: 20px;
       z-index: 1;
       top: 50px;
+      right: -25px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     img {
@@ -79,22 +89,7 @@ export const Nav = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 60px;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-    right: 120px;
-    z-index: 3;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
-
-    &.active {
-      opacity: 1;
-      visibility: visible;
-    }
+    display: none;
   }
 `;
 
@@ -121,18 +116,7 @@ export const CallToActions = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 220px;
-    z-index: 3;
-    right: 50px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
-
-    &.active {
-      opacity: 1;
-      visibility: visible;
-    }
+    justify-self: end;
+    position: static;
   }
 `;

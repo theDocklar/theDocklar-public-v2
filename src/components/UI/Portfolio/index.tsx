@@ -32,7 +32,7 @@ const Portfolio = () => {
 
   const stats = [
     { number: '20+', subtitle: 'Web Solutions' },
-    { number: '5+', subtitle: 'countries' },
+    { number: '3+', subtitle: 'countries' },
     { number: '10+', subtitle: 'clients' },
     { number: '1+', subtitle: 'years' },
   ];

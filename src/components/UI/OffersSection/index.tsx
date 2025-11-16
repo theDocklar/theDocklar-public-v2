@@ -4,7 +4,7 @@ import {
   Wrapper,
   Inner,
   Header,
-  Offers,
+  OffersGrid,
   OfferCard,
   ImageCtn,
   TextCtn,
@@ -32,11 +32,11 @@ const OffersSection = () => {
             <MaskText phrases={desktopParagraphPhrase} tag="p" />
           )}
         </Header>
-        <Offers>
-          {offers.slice(0, 1).map((offer, i) => (
+        <OffersGrid>
+          {offers.map((offer, i) => (
             <OfferCard key={i}>
               <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
+                <Image src={offer.illustration} alt={offer.title} fill style={{ objectFit: 'cover' }} />
                 <TextCtn>
                   <MaskText phrases={new Array(offer.title)} tag="h2" />
                   <p>{offer.details}</p>
@@ -44,72 +44,7 @@ const OffersSection = () => {
               </ImageCtn>
             </OfferCard>
           ))}
-        </Offers>
-        <Offers>
-          {offers.slice(1, 2).map((offer, i) => (
-            <OfferCard key={i}>
-              <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
-                <TextCtn>
-                  <MaskText phrases={new Array(offer.title)} tag="h2" />
-                  <p>{offer.details}</p>
-                </TextCtn>
-              </ImageCtn>
-            </OfferCard>
-          ))}
-        </Offers>
-        <Offers>
-          {offers.slice(2, 3).map((offer, i) => (
-            <OfferCard key={i}>
-              <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
-                <TextCtn>
-                  <MaskText phrases={new Array(offer.title)} tag="h2" />
-                  <p>{offer.details}</p>
-                </TextCtn>
-              </ImageCtn>
-            </OfferCard>
-          ))}
-        </Offers>
-        <Offers>
-          {offers.slice(3, 4).map((offer, i) => (
-            <OfferCard key={i}>
-              <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
-                <TextCtn>
-                  <MaskText phrases={new Array(offer.title)} tag="h2" />
-                  <p>{offer.details}</p>
-                </TextCtn>
-              </ImageCtn>
-            </OfferCard>
-          ))}
-        </Offers>
-        <Offers>
-          {offers.slice(4, 5).map((offer, i) => (
-            <OfferCard key={i}>
-              <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
-                <TextCtn>
-                  <MaskText phrases={new Array(offer.title)} tag="h2" />
-                  <p>{offer.details}</p>
-                </TextCtn>
-              </ImageCtn>
-            </OfferCard>
-          ))}
-        </Offers>
-        <Offers>
-        {offers.slice(5, 6).map((offer, i) => (
-            <OfferCard key={i}>
-              <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
-                <TextCtn>
-                  <MaskText phrases={new Array(offer.title)} tag="h2" />
-                  <p>{offer.details}</p>
-                </TextCtn>
-              </ImageCtn>
-            </OfferCard>
-          ))}
-        </Offers>
+        </OffersGrid>
       </Inner>
     </Wrapper>
   );

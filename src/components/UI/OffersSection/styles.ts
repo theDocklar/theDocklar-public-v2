@@ -50,9 +50,9 @@ export const Header = styled.header`
 
 export const ImageCtn = styled.div`
   position: relative;
+  width: 100%;
+  height: 100%;
   flex: 1;
-  display: flex;
-  min-height: 0;
   overflow: hidden;
 
   &::after {
@@ -61,23 +61,11 @@ export const ImageCtn = styled.div`
     inset: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.7) 85%);
     z-index: 1;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    z-index: 0;
+    pointer-events: none;
   }
 
   @media (max-width: 768px) {
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    height: 100%;
   }
 `;
 
@@ -115,71 +103,13 @@ export const TextCtn = styled.div`
   }
 `;
 
-export const Offers = styled.div`
-  display: flex;
-  align-items: center;
+export const OffersGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
 
-  &:last-child {
-    margin-top: 2rem;
-
-    div:first-child {
-      flex: 1;
-
-      ${ImageCtn} {
-        flex: 2;
-      }
-
-      ${TextCtn} {
-        height: 1em;
-        flex: 1;
-      }
-    }
-
-    div:last-child {
-      flex: 2;
-
-      ${ImageCtn} {
-        flex: 2;
-        margin-left: auto;
-      }
-
-      ${TextCtn} {
-        height: 1em;
-        flex: 1;
-      }
-    }
-  }
-
   @media (max-width: 768px) {
-    flex-direction: column;
-
-    &:last-child {
-      div:first-child {
-        flex: 1;
-
-        ${ImageCtn} {
-          flex: 1;
-        }
-
-        ${TextCtn} {
-          margin-top: 4rem;
-        }
-      }
-
-      div:last-child {
-        flex: 1;
-
-        ${ImageCtn} {
-          flex: 1;
-          margin-left: auto;
-        }
-
-        ${TextCtn} {
-          margin-top: 2rem;
-        }
-      }
-    }
+    gap: 1.5rem;
   }
 `;
 
@@ -193,16 +123,8 @@ export const OfferCard = styled.div`
   background: url(${grid_background.src}) #131313 no-repeat;
   position: relative;
 
-  &:first-child {
-    flex: 2;
-  }
-
-  &:nth-child(2) {
-    flex: 1;
-
-    ${ImageCtn} {
-      margin-left: 2.5rem;
-      width: 100%;
-    }
+  @media (max-width: 768px) {
+    height: 20rem;
+    min-height: 20rem;
   }
 `;

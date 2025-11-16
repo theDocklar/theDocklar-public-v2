@@ -40,6 +40,11 @@ export const LogoContainer = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-start;
     width: auto;
+
+    img {
+      width: 140px !important;
+      height: auto !important;
+    }
   }
 `;
 

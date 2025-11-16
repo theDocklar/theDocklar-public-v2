@@ -10,7 +10,7 @@ export const desktopParagraphPhrase = [
   "That's why we offer you the comprehensive solutions you deserve.",
 ];
 export const desktopBriefNotePhrase = [
-  '"Came for a website, stayed for the strategy, left with a full digital transformation.',
+  '"Came for a website, stayed for the strategy, left with a full digital transformation."',
  
 ];
 
@@ -28,21 +28,21 @@ export const mobileBriefNotePhrase = [
 
 export const edges = [
   {
-    point: 'Modern Technologies',
+    point: 'All-in-One Foundation',
     details:
-      'Our websites are built with the latest technologies and frameworks, ensuring optimal performance, security, and scalability for your business.',
+      'We provide a complete, end-to-end foundation for your digital presence—covering everything you need to confidently begin your online journey without juggling multiple providers.',
     icon: ic_document_duplicate,
   },
   {
-    point: 'Custom Design',
+    point: 'Holistic Digital Identity',
     details:
-      'Every project is uniquely crafted to reflect your brand identity. We create custom designs that stand out and engage your target audience.',
+      'Your brand’s presence is shaped through a unified, thoughtful approach—from visual identity to user experience—ensuring consistency, clarity, and impact across every touchpoint.',
     icon: ic_identification,
   },
   {
-    point: 'SEO Optimized',
+    point: 'Built for Growth',
     details:
-      'Your website will be optimized for search engines from day one, helping you rank higher and attract more organic traffic to your business.',
+      'Your digital ecosystem is designed with scalability, visibility, and long-term success in mind, supporting your business as it evolves and grows in the digital landscape.',
     icon: ic_lock_closed,
   },
 ];

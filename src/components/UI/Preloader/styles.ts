@@ -55,13 +55,13 @@ export const Inner = styled.div`
     }
 
       div {
-        gap: 0.05rem;
+        gap: 0.3rem;
         div {
           font-family: var(--font-leaguespartan), 'League Spartan', sans-serif;
           font-weight: 600;
-          font-size: 4rem;
-          letter-spacing: -0.02rem;
-          line-height: 0.9;
+          font-size: 2.5rem;
+          letter-spacing: 0;
+          line-height: 1;
         }
       }
   }

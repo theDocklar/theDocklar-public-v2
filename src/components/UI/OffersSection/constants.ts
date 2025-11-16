@@ -29,19 +29,19 @@ export const offers = [
   },
   {
     illustration: seo,
-    title: 'SEO Marketing',
+    title: 'Technical SEO and digital presence',
     details:
       'Boost your online visibility with our comprehensive SEO strategies, driving organic traffic and improving search rankings.',
   },
   {
     illustration: creative,
-    title: 'Creative',
+    title: 'Creative Branding and Design',
     details:
       'Create a memorable brand identity with our creative design services, from logos to complete visual systems.',
   },
   {
     illustration: ai,
-    title: 'AI Solutions',
+    title: 'AI Solutions and Automations',
     details:
       'Reach your target audience effectively with our integrated digital marketing campaigns across all platforms.',
   },

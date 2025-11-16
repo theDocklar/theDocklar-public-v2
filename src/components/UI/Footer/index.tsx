@@ -35,6 +35,7 @@ import {
   FooterBottom,
   Translator,
   CopyRight,
+  ContactInfo,
 } from './styles';
 
 const Footer = () => {
@@ -61,9 +62,13 @@ const Footer = () => {
             </FooterNavigation>
           </FooterMiddle>
           <FooterBottom>
+            {/* <ContactInfo>
+              <a href="mailto:info@theboatgrp.com">info@theboatgrp.com</a>
+              <p >+94 777111770</p>
+            </ContactInfo> */}
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              theBOAT by theBOAT ceylon pvt LTD.
+              theBOAT Ceylon pvt LTD.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

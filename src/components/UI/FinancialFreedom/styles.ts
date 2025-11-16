@@ -77,25 +77,7 @@ export const BannerCtn = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 25rem;
-    min-height: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    > div {
-      height: 100% !important;
-      width: 100%;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    img {
-      object-fit: contain !important;
-      object-position: center;
-    }
+    display: none;
   }
 `;
 

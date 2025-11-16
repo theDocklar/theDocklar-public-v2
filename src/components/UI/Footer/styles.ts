@@ -153,8 +153,39 @@ export const LinksContainer = styled.ul`
 
 export const FooterBottom = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    gap: 0.75rem;
+  }
+`;
+
+export const ContactInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  a {
+    color: var(--link-color);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 0.375rem;
+
+    a {
+      font-size: 0.875rem;
+    }
+  }
 `;
 
 export const Translator = styled.div`

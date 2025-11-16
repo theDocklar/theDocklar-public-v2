@@ -1,5 +1,7 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
 import { Div, Word, Span, AbsoluteContainer } from './styles';
 
 type AnimationProps = {
@@ -59,6 +61,9 @@ const letterAnimationTwo = {
 
 const AnimatedLink = ({ title, href }: { title: string; href?: string }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+  
   const content = (
     <Div
       onMouseEnter={() => setIsHovered(true)}
@@ -80,8 +85,54 @@ const AnimatedLink = ({ title, href }: { title: string; href?: string }) => {
   );
 
   if (href) {
+    // Handle hash links (anchor links)
+    if (href.startsWith('#')) {
+      const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        
+        // If we're on the home page, just scroll
+        if (pathname === '/') {
+          const element = document.getElementById(targetId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        } else {
+          // If we're on a different page, navigate to home first
+          router.push('/');
+          // Wait for navigation then scroll to hash
+          setTimeout(() => {
+            const element = document.getElementById(targetId);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 300);
+        }
+      };
+      
+      return (
+        <a 
+          href={pathname === '/' ? href : `/${href}`}
+          onClick={handleHashClick}
+          style={{ textDecoration: 'none', cursor: 'pointer' }}
+        >
+          {content}
+        </a>
+      );
+    }
+    
+    // Handle internal routes - use Next.js Link
+    if (href.startsWith('/')) {
+      return (
+        <Link href={href} style={{ textDecoration: 'none' }}>
+          {content}
+        </Link>
+      );
+    }
+    
+    // External links
     return (
-      <a href={href} style={{ textDecoration: 'none' }}>
+      <a href={href} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
         {content}
       </a>
     );

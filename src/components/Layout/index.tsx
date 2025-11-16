@@ -22,10 +22,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
-  const handlePreloaderComplete = (value: boolean) => {
-    setComplete(value);
-  };
-
   return (
     <StyledComponentsRegistry>
       <ReactLenis
@@ -33,7 +29,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         easing={(t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t))}
       >
         <GlobalStyles />
-        {!complete && <Preloader setComplete={handlePreloaderComplete} />}
+        {!complete && <Preloader setComplete={setComplete} />}
         <div className={complete ? 'complete' : 'not_complete'}>
           <Header />
           {children}
